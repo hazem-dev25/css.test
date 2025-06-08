@@ -1,12 +1,101 @@
-div {
+.first {
     color: #000000;
-    font-size: 25px; 
+    font-size: 35px; 
     background-color: blanchedalmond;
-    background-repeat: no-repeat;
-    background-image: url(dbc9fb05b378cd70653f5246b5aec87c5a0d8db0.jpeg);
-    background-attachment: fixed;
-    background-position: center top;
     /* i can move the background image by px also */
-    background-position: 10px 20px;
-    background-size: cover;
+    padding: 10px 20px;
+    width: 40%;
+    margin: auto;
+    margin-top: -40px;
+    display: none;
 }
+/* just test */
+.trying {
+    color: #000000;
+    font-size: 30px;
+    background-color: lightblue;
+    background-image: url('https://www.w3schools.com/css/img_fjords.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px 29px;
+    width: 40%;
+    margin: auto;
+    border: 10px solid #00ff00;
+    display: none;
+} 
+
+.one{
+    border-bottom: 2px solid #000000;
+    color: black;
+}
+
+.two{
+    border-bottom: 2px solid blue;
+    color:blue;
+}
+
+.three{
+    border-bottom: 2px solid blueviolet;
+    color: blueviolet;    
+}
+
+.four{
+    border-bottom: 2px solid burlywood;
+    color: burlywood;
+}
+/* multi  selector */
+.one,
+.two,
+.three,
+.four {
+    font-size: 40px;
+    padding: 20px;
+    margin: 40px;
+    background-color: #eee;
+    display: none;
+}
+
+/* nesting */
+
+div .testone {
+    font-size: 30px;
+    color: #000000;
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 20%;
+    margin: auto;
+}
+
+div .testtwo {
+    font-size: 50px;
+    color: #801515;
+    background-color: #070707;
+    padding: 40px;
+    width: 30%;
+    margin: auto;
+}
+
+.testone {
+    border: 2px solid #000000;
+    font-size: 10px;
+    color: #000fff;
+}
+
+p {
+    font-size: 20px;
+    color: #000000;
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+div .testone,
+div .testtwo,
+.testone,
+p  {
+    display: none;
+}
+
