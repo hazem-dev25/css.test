@@ -1,51 +1,86 @@
-# 🎨 CSS Background Properties Demo
+:
 
-This is a simple HTML and CSS project created to demonstrate how background properties work in CSS using a `<div>` element with repeated text.
+🎨 CSS Practice Project by Hazem
+A beginner-friendly HTML & CSS project for styling practice and layout testing.
 
-## 🔧 What This Project Shows
+📌 Overview
+This project is a personal CSS playground created by Hazem to explore and practice core CSS concepts. It includes multiple styled elements demonstrating:
 
-- How to set a background image.
-- How to control image position, repeat, and size.
-- The effect of `background-attachment: fixed` when scrolling.
+Class-based styling
 
-## 🧱 Code Breakdown
+Background images & positioning
 
-### ✅ HTML
-A single `<div>` contains multiple `<p>` elements with the same text to create enough content for scrolling.
+Fixed vs. relative layouts
 
-### ✅ CSS
+Nested selectors
 
-``css
-div {
-    color: #000000;
-    font-size: 25px; 
-    background-color: blanchedalmond;
-    background-repeat: no-repeat;
-    background-image: url("your-image.jpeg");
-    background-attachment: fixed;
-    background-position: 10px 20px;
-    background-size: cover;
-    padding: 30px;
-}
-🧠 Explanation:
-background-color: Adds a soft background color behind the image.
+Display control
 
-background-image: Sets a background image (make sure to replace "your-image.jpeg" with the actual image file).
+Multi-selector grouping
 
-background-repeat: no-repeat: Prevents the image from repeating.
+The entire structure is kept simple and clean to focus on learning and experimentation.
 
-background-position: 10px 20px: Moves the image 10px from the left and 20px from the top.
+🛠️ Technologies Used
+HTML5 – for structuring content
 
-background-attachment: fixed: Fixes the background image in place when scrolling.
+CSS3 – for layout, design, and responsiveness
 
-background-size: cover: Scales the image to fully cover the div.
+📂 Folder Structure
+/project-root
+│
+├── index.html      # Main HTML file
+├── style.css       # External CSS file with all the styles
+└── README.md       # You're here!
+🧪 Features Demonstrated
+🔹 .first section
+A styled block with repeated text and background color — hidden by default using display: none.
 
-padding: Adds inner spacing so the text doesn’t touch the edges.
+🔹 .trying section
+A visually appealing block with:
 
-📷 Result Preview
-When viewed in a browser, you’ll see the text scrolling while the background image stays fixed. This creates a nice parallax-like effect.
+Background image (url)
 
-🧑‍💻 Author
-Hazem – Learning CSS one step at a time 💪
+Background size & position control
 
-💡 Feel free to fork this and play with different background settings to understand them bette
+Fixed attachment to the viewport
+
+Border and padding styling
+
+🔹 .one, .two, .three, .four
+Four uniquely styled blocks with:
+
+Different text and border colors
+
+Group styling with multi-selectors
+
+Uniform padding and spacing
+
+🔹 Nesting selectors
+Includes:
+
+Nested .testone and .testtwo inside a <div>
+
+Same classes used outside to compare nested vs non-nested styling
+
+👨‍💻 Author
+Hazem
+Self-taught web developer in training.
+Focused on mastering HTML, CSS, and soon JavaScript & Node.js.
+
+
+📄 License
+This project is open for learning and practice.
+Feel free to clone, use, or modify it as you wish. No attribution required.
+
+🚀 How to Run
+Clone the repo
+git clone https://github.com/your-username/css-practice-project.git
+Open index.html in your browser.
+
+To make elements visible, you can:
+
+Remove or modify display: none from the .css file.
+
+Or add some JavaScript to toggle visibility dynamically.
+
+
