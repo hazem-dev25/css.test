@@ -132,3 +132,36 @@ div .testtwo,
     direction: ltr;
     display: none;
 }
+
+/* inheritance */
+.inherit {
+    font-size: 40px;
+    color: #000000;
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+    border: 2px solid #000000;
+    display: none;
+}
+
+.child {
+    font-size: 30px;
+    color: inherit;
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 20%;
+    margin: auto;
+    border : inherit;
+    display: none;
+}
+
+/* font family */
+.font {
+    background-color: gray;
+    font-size: 40px;
+    padding: 20px;
+    color: #000000;
+    border: #000fff 2px solid;
+    display: none;
+}
