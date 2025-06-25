@@ -207,7 +207,7 @@ display: none;
 
 /* opacity */
 .opacity {
-    opacity: none;
+    opacity: 0.5; /* Changed from 'none' to 0.5 */
     font-size: 40px;
     background-color: aquamarine;
     display: none;
@@ -264,7 +264,7 @@ display: none;
     color: #000000;
     background-color: #d10909;
     position: absolute;
-    z-index: none;
+    z-index: 1;
     display: none;
 }
 
@@ -849,3 +849,54 @@ height: 40px;
     text-align: center;
 }
 
+/* Complete Layout With Template Areas */
+.page {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas:
+    "logo logo logo logo logo logo list list  list  list " 
+    "cont cont cont cont cont cont cont side side side "
+    "foot foot foot foot foot foot foot foot foot foot ";
+}
+
+.logo {
+    grid-area: logo;
+    background-color: #000;
+    color: white;
+    margin: 0;
+}
+
+.list {
+    grid-area: list ;
+    background-color: #000fff;
+    color: white;
+}
+
+.list ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.cont {
+    grid-area: cont;
+    background-color: #00ff00;
+    color: white;
+}
+
+.side {
+    grid-area: side;
+    background-color: yellow;
+    color: white;
+}
+
+.foot {
+    grid-area: foot;
+    background-color: red;
+    color: white;
+}
