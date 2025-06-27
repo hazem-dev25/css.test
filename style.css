@@ -863,6 +863,7 @@ height: 40px;
     "logo logo logo logo logo logo list list  list  list " 
     "cont cont cont cont cont cont cont side side side "
     "foot foot foot foot foot foot foot foot foot foot ";
+    display: none;
 }
 
 .logo {
@@ -899,4 +900,22 @@ height: 40px;
     grid-area: foot;
     background-color: red;
     color: white;
+}
+
+/* Grid - Min, Max And Auto Fill */
+.minmax {
+    box-sizing: border-box;
+    height: 400px;
+    background-color: #000000;
+    color: #eee;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px , 1fr ) );
+    display: none;
+}
+
+.minmax div {
+    font-size: 30px;
+    text-align: center;
+    background-color: #000fff;
 }
