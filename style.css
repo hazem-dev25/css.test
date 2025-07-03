@@ -935,17 +935,20 @@ thead {
 
 /* Animation - Iteration Count, Timing Function, Spinner Loading */
 .spin {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin: 20% auto;
   border: 5px solid #000000;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(235, 232, 232);
   border-radius: 50%;
   border-left-color: transparent;
   animation-name: spin;
   animation-duration: 1.3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-play-state: running;
+  display: none;
 }
 
 @keyframes spin {
@@ -954,5 +957,67 @@ thead {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.spin:hover {
+  width: 50px;
+  height: 50px;
+  border: black solid 8px;
+  background-color: rgb(235, 232, 232);
+  animation-name: spin;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-left-color: transparent;
+  transition-duration: 1s;
+  animation-play-state: paused;
+}
+
+/* Up And Down Loading Animation Training */
+.up-and-down {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 20% auto;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.up-and-down div {
+  width: 20px;
+  height: 20px;
+  background-color: orangered;
+  margin: 0 10px;
+  border-radius: 50%;
+  animation-name: up-down;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.up-and-down .up-one {
+  animation-delay: 0s;
+}
+
+.up-and-down .up-two {
+  animation-delay: 0.3s;
+}
+
+.up-and-down .up-three {
+  animation-delay: 0.6s;
+}
+
+@keyframes up-down {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0.3;
+    transform: translateY(-20px);
   }
 }
