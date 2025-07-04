@@ -968,7 +968,7 @@ thead {
   animation-name: spin;
   animation-duration: 1.3s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: alternate;
   border-left-color: transparent;
   transition-duration: 1s;
   animation-play-state: paused;
@@ -980,23 +980,24 @@ thead {
   display: flex;
   justify-content: center;
   margin: 20% auto;
+  display: none;
 }
 
 body {
-  background-color: black;
+  background-color: rgb(255, 244, 244);
   margin: 0;
 }
 
 .up-and-down div {
   width: 20px;
   height: 20px;
-  background-color: orangered;
   margin: 0 10px;
   border-radius: 50%;
   animation-name: up-down;
   animation-duration: 0.9s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  background-color: orangered;
 }
 
 .up-and-down .up-one {
@@ -1020,4 +1021,9 @@ body {
     opacity: 0.3;
     transform: translateY(-20px);
   }
+}
+
+/* CSS Selectors Reference */
+.big > .small {
+  color: red;
 }
