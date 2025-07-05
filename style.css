@@ -1027,3 +1027,36 @@ body {
 .big > .small {
   color: red;
 }
+
+input[type="text"] + span {
+  color: blue;
+}
+
+div:last-of-type {
+  color: orangered;
+}
+
+p:first-of-type {
+  color: green;
+}
+
+div:nth-last-child(3) {
+  color: purple;
+}
+
+div:nth-last-of-type(3) {
+  color: orange;
+}
+
+::placeholder {
+  color: #000000;
+  font-size: 20px;
+}
+
+input[type="text"] :required {
+  border: 2px solid red;
+}
+
+p:not(:first-of-type) {
+  color: firebrick;
+}
